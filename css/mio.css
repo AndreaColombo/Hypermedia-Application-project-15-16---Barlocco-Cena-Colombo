@@ -1,0 +1,149 @@
+.header{
+	background-color: #2b78e4;
+}
+.navbar-default{
+	background-color: #2b78e4;
+}
+.navbar-default .navbar-nav>li>a{
+	color: #ffffff
+}
+.navbar-nav{
+	background-color: #cc0000;
+}
+.navbar{
+	border: 0px;
+	margin-bottom: 0px;
+}
+h1{
+	color: #ffffff;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+.navbar2{
+	font-size: 22px;
+	min-height: 70px;
+}
+.nav >li{
+	margin-top: 9px;
+}
+.nav1 > li{
+	margin-top: 0px;
+	float: right !important;
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 90%;
+	  height: 50%;
+      margin: auto;
+  }
+.titleSlide{
+	color: #ffffff;
+	text-align: center;
+	background-color: #2b78e4;
+	font-size: 22px;
+}
+.carousel{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.glyphicon{
+	color: #646464;
+}
+.carousel-control.left{
+	background-image: none;
+}
+.carousel-control.right{
+	background-image: none;
+}
+.page-header{
+	border-bottom: 0px;
+}
+.carousel-control{
+	width: 5%;
+}
+
+.slide-phone {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.device-subtitle {
+	color: #cc0000;
+}
+
+.device-title {
+	font-weight: bold;
+}
+
+.my-list {
+	list-style: >;
+	background-color: #fff;
+}
+
+.devicetitleSlide{
+	color: #ffffff;
+	text-align: center;
+	background-color: #2b78e4;
+	font-size: 22px;
+	height: 15%;
+}
+
+.device-big-title {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, 
+.img-responsive, .thumbnail a>img, .thumbnail>img {
+	height: 40%;
+}
+
+#wrapper { 
+	position: relative;
+}
+
+#menu-bar {
+	position: absolute;
+	top: 0;
+	padding-top: 10px;
+}
+
+#menu-bar.fixed {
+	position: fixed;
+	top: 0;
+}
+
+.boh {
+	height: 100%;
+}
+
+.padding {
+	height: 300px;	
+}
+.cont-device {
+	min-height: 10%;
+}
+
+.h3-centered {
+	text-align: center;
+}
+
+.on-top {
+	z-index: 999;
+}
+
+.no-padding-table {
+	padding-right:0px;
+    padding-left:0px;
+}
+.no-padding{
+	padding-top: 0px;
+	margin-top: auto;
+}
+
+.mybutton {
+	background-image: none;
+}
