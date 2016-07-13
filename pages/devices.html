@@ -81,9 +81,25 @@
 	
 	<script>
         $(document).ready(function (){
-            $("#click").click(function (){
+            $("#click1").click(function (){
                 $('html, body').animate({
                     scrollTop: $("#section1").offset().top-250}, 1000);
+            });
+			$("#click2").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#section2").offset().top-250}, 1000);
+            });
+			$("#click3").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#section3").offset().top-250}, 1000);
+            });
+			$("#click4").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#section4").offset().top-250}, 1000);
+            });
+			$("#click5").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#section5").offset().top-250}, 1000);
             });
         });
     </script>
@@ -93,31 +109,31 @@
 			<div id ="menu-bar">
 				<ol class ="breadcrumb my-list" id ="my-list"> 
 				<li>
-					<a id ="click">
+					<a id ="click1">
 						<img src = "../img/device/smartphone-icon.jpg" hspace = "35"></img>
 						<h3 class ="h3-centered"> Smartphone</h3>
 					</a>
 				</li>
 				<li>
-					<a href ="#section2">
+					<a id = "click2">
 						<img  src = "../img/device/tablet-icon.jpg" hspace = "35"></img>
 						<h3 class ="h3-centered"> Tablet</h3>
 					</a>
 				</li>
 				<li>
-					<a href = "#section3">
+					<a  id="click3">
 						<img src = "../img/device/smart-icon.jpg" hspace = "35"></img>	
 						<h3 class ="h3-centered"> Smart Accessories</h3>
 					</a>
 				</li>
 				<li>
-					<a href = "#section4">
+					<a  id="click4">
 						<img src = "../img/device/router-icon.png" hspace = "35"></img>	
 						<h3 class ="h3-centered"> Modem&Networking </h3>
 					</a>
 				</li>
 				<li>
-					<a href = "#section5">
+					<a  id="click5">
 						<img src = "../img/device/sale-tag-icon.jpg" hspace = "35"></img>	
 						<h3 class ="h3-centered"> Device outlet</h3>
 					</a>
