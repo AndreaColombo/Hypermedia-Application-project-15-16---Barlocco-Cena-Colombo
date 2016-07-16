@@ -1,0 +1,156 @@
+<html>
+<head>
+  <title>youCall</title>
+
+  <!-- META -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- META -->
+  
+  <!-- CSS -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="../css/headfoot.css" rel="stylesheet" media="screen">
+  <link href="../css/devices.css" rel="stylesheet" media="screen">
+  
+  <link href="../css/slServices.css" rel="stylesheet" media="screen">
+  <!-- CSS -->  
+
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-11"> 
+				<nav class="navbar navbar-default" role="navigation">
+					<ul class="nav navbar-nav navbar-right nav1">
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="#">Who we are</a></li>
+						<li><a href="#">The group</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-md-1 col-md-offset-1">
+				<a href="../index.html">
+				<h1>youCall</h1>
+			</a>
+			</div>
+			<div class="col-md-10 col-md-offset-3"> 
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+							<span class="sr-only">Espandi barra di navigazione</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav navbar2">
+							<li><a href="#">Promotions</a></li>
+							<li><a href="/devices.html">Devices</a></li>
+							<li><a href="/sl-services.html">SL Services</a></li>
+							<li><a href="#">Assistance</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+  </header>
+	  <section>
+		<div class = "container">
+			<ol class="breadcrumb my-list">
+				<li itemprop="itemListElement">
+					
+					<meta itemprop="name" content = "Home">
+					<meta itemprop="position" content="1">
+					<a href="../index.html" itemprop="item">
+					Home
+					</a>
+				</li>
+				<li>
+								<meta itemprop="name" content = "SL Services">
+				<meta itemprop="position" content="1">
+					<a href="../pages/sl-services.html" itemprop="item">
+					SL services
+					
+					</a>
+				</li>
+				<li>
+					Home & Family
+				</li>
+			</ol>
+		</div>
+	</section>
+	
+	<div id="banda2" class="banda">
+		<ul id= "griglia"><li>
+			<img class="img-responsive" src="..\img\smartLife\download.jpg" width="477" height="332">
+		</li></ul>
+	</div>
+	</div>
+	
+	<br>
+	<script src = "../js/scroll.js"></script>
+	
+	<script>
+        $(document).ready(function (){
+            $("#click1").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#section1").offset().top-250}, 1000);
+            });
+			$("#click2").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#section2").offset().top-250}, 1000);
+            });
+			$("#click3").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#section3").offset().top-250}, 1000);
+            });
+			$("#click4").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#section4").offset().top-250}, 1000);
+            });
+
+        });
+    </script>
+	<br><br><br><br>
+	<div class = "container">
+		<ul id= "griglia">
+			<li><a href="http://www.html.it" target="_blank"> <img class="img-responsive" src="..\img\smartLife\carpack.jpg"width="390" height="390" border="0" vspace="10"
+							onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=40" 
+							onmouseout="this.style.opacity=1.0;this.filters.alpha.opacity=100"><p>INTERNET CAR PACK</p> <h4>The ideal solution to manage 
+all home<br> automation systems</h4>
+		<li><a href="http://www.html.it" target="_blank"> <img class="img-responsive" src="..\img\smartLife\dlink.jpg"width="589" height="38	1" border="0" vspace="10"
+								onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=40" 
+								onmouseout="this.style.opacity=1.0;this.filters.alpha.opacity=100"><p>D-LINK SMART HOME</p><h4>D-link smart home let you control 
+and automate<br> your home from wherevere you are</h4>
+			</a></li>
+			<li><a href="http://www.html.it" target="_blank"> <img class="img-responsive" src="..\img\smartLife\homeconn.jpg" width="477" height="332" border="0" vspace="10"
+							onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=40" 
+							onmouseout="this.style.opacity=1.0;this.filters.alpha.opacity=100"> <p>HOME CONNECT</p><h4 id = "sottotitolo">With the new car pack you will be able to connect<br> to internet whene you are on a journey</h4>
+			</a></li>
+
+		</ul>
+	</div>
+
+		
+
+  <footer id="panel-footer">
+	<div class="container">
+		<div class="row">
+			<hr>
+			<div class="col-lg-12">
+				<div class="col-md-8">
+					<a href="#">Privacy</a> | <a href="#">Legal notes</a> | <a href="#">Work with us</a> | <a href="#">Website info</a>    
+				</div>
+				<div class="col-md-4">
+					<p class="muted pull-right">&copy; 2016 youCall. All rights reserved</p>
+				</div>
+			</div>
+		</div>
+	</div>
+  </footer>
+</body>
+</html>

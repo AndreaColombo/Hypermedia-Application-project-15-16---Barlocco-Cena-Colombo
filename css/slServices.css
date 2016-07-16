@@ -1,0 +1,36 @@
+#griglia {
+  text-align: center;
+  padding: 0;
+  margin: 0px;
+}
+#griglia > li {
+  display: inline-block;
+  
+}
+.banda { 
+	width: 100%; 
+}
+#banda1{
+	padding: 0;
+	position: relative;
+	background:rgba(43,120,228,0.2);
+	text-align: center;
+}
+#banda2{
+	padding: 0;
+	position: relative;
+	background:rgba(255,0,0,0.2);
+	text-align: center;
+}
+#griglia li  p {
+  padding: 0px 0px 0px 0px;
+  margin: 0;
+  font-size: 30px;
+  color: #2b78e4;
+}
+h4{
+  padding: 0px 0px 0px 0px;
+  margin: 0;
+  font-size: 17px;
+  color: #000000;
+}

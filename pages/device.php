@@ -53,3 +53,4 @@ echo "<a data-slide='prev' href='#deviceCarousel' class='carousel-control left'>
 mysql_free_result($result);
 
 ?>
+?>

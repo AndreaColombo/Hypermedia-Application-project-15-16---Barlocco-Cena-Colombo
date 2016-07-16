@@ -8,14 +8,16 @@
   
   <!-- CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link href="css/mio.css" rel="stylesheet" media="screen">
+  <link href="css/headfoot.css" rel="stylesheet" media="screen">
+  
+  <link href="css/index.css" rel="stylesheet" media="screen">
   <!-- CSS -->  
 
 </head>
 <body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-   <script src="js/home.js"></script>
+  <script src="js/home.js"></script>
   <header class="header">
 	<div class="container">
 		<div class="row">
@@ -47,7 +49,7 @@
 						<ul class="nav navbar-nav navbar2">
 							<li><a href="#">Promotions</a></li>
 							<li><a href="pages/devices.html">Devices</a></li>
-							<li><a href="#">SL Services</a></li>
+							<li><a href="pages/sl-services.html">SL Services</a></li>
 							<li><a href="#">Assistance</a></li>
 						</ul>
 					</div>
@@ -69,33 +71,12 @@
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-
-      <div class="item active">
-        <img src="gigi.jpg" alt="Chania" width="460" height="345">
-      </div>
-
-      <div class="item">
-        <img src="John.jpg" alt="Chania" width="460" height="345">
-      </div>
-	  
-	  <div class="item">
-        <img src="promotion.PNG" alt="Chania" width="460" height="345">
-      </div>
+    <div class="carousel-inner" role="listbox" id="divprom">
     
-      <div class="item">
-        <img src="Trump.jpg" alt="Flower" width="460" height="345">
-        <div class="carousel-caption">
-          <h3>Flowers</h3>
-          <p>Beatiful flowers in Kolymbari, Crete.</p>
-        </div>
-      </div>
-  
-    </div>
+	</div>
 
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -117,9 +98,55 @@
                  <h2 class="titleSlide"> Devices</h2>
             </div>
             <div class="carousel slide" id="deviceCarousel">
-                <div class="carousel-inner slide-phone" id="ajaxDiv">
-                   
-                </div>
+                <div class="carousel-inner slide-phone" id="ajaxdiv">
+                   <div class='item active'>
+						<div class='col-sm-4'>
+							<div class='thumbnail' id="devimg0">
+							</div>
+							<div class='caption' id="devbrand0"> 
+							</div>
+						</div>
+						<div class='col-sm-4'>
+							<div class='thumbnail' id="devimg1">
+							</div>
+							<div class='caption' id="devbrand1">
+							</div>
+						</div>
+						<div class='col-sm-4'>
+							<div class='thumbnail' id="devimg2">
+							</div>
+							<div class='caption' id="devbrand2">
+							</div>
+						</div>
+					</div>
+					<div class='item'>
+						<div class='col-sm-4'>
+							<div class='thumbnail' id="devimg3">
+							</div>
+							<div class='caption' id="devbrand3">
+							</div>
+						</div>
+						<div class='col-sm-4'>
+							<div class='thumbnail' id="devimg4">
+							</div>
+							<div class='caption' id="devbrand4">
+							</div>
+						</div>
+						<div class='col-sm-4'>
+							<div class='thumbnail' id="devimg5">
+							</div>
+							<div class='caption' id="devbrand5">
+							</div>
+						</div>
+					</div>
+					<a data-slide='prev' href='#deviceCarousel' class='carousel-control left'>
+				  <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>
+                    <span class='fa fa-chevron-left' aria-hidden='true'></span>
+                  </a>
+                  <a data-slide='next' href='#deviceCarousel' class='carousel-control right'>
+				  <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
+                    <span class='fa fa-chevron-right' aria-hidden='true'></span>
+                  </a>
 
             </div>
             <!-- /#myCarousel -->

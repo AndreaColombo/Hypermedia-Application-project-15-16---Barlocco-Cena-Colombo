@@ -1,0 +1,36 @@
+.box-filter{
+		margin-bottom: 30px;
+	    max-width: 235px;
+}
+.content-intern{
+	max-width: 235px;
+    background-color: #f0f0f0;
+    border: 1px solid #b3b3b3;
+}
+.panel-group{
+	margin-bottom: 0;
+}
+.panel{
+	background-color: #f0f0f0;
+    box-shadow: none;
+	margin-bottom: 0;
+    border-radius: 0px;
+	border-color: #ddd;
+}
+.panel-title{
+	color: #2b78e4;
+	font-size: 18px;
+	margin-top:10;
+}
+.list-product{
+	margin-top: 10px;
+}
+.device-subtitle {
+	color: #cc0000;
+}
+.device-title {
+	font-weight: bold;
+}
+.thumbnail>img {
+	height: 16vw;
+}

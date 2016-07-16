@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 var ajaxRequest;  // The variable that makes Ajax possible!
                
                try {
@@ -23,23 +23,25 @@ var ajaxRequest;  // The variable that makes Ajax possible!
                // sent from the server and will update
                // div section in the same page.
 				var x;
-               ajaxRequest.onreadystatechange = function(){
-                  if(ajaxRequest.readyState == 4){
-					 x=ajaxRequest.responseText;
-					 x=JSON.parse(x);
-					 for(i=0;i<6;i++){
-						$("#devimg"+i).append("<img class='img-responsive hidden-xs' src='" + x[i].image + "' alt=''><a href='#'></a>");
-						$("#devbrand"+i).append("<h4 class='device-title'>"+x[i].brand+"</h4><p class='device-subtitle'>"+x[i].model+"</p>");
+				ajaxRequest.onreadystatechange = function(){
+					if(ajaxRequest.readyState == 4){
+						x=ajaxRequest.responseText;
+						x=JSON.parse(x);
+						for (j=0; j<2;j++){
+							for (i=0; i<3; i++){
+								if (i==0 && j==1){
+									$("#highlight"+j).append("<div> <a href = '#' <p class ='assistance-title'>"+x[3].name+"<span class='freccina glyphicon glyphicon-chevron-right' align ='right'></span></p></a></div><hr class ='line-assistance' align ='left'>");
+								}
+								else 
+									$("#highlight"+j).append("<div> <a href = '#'> <p class ='assistance-title'>"+x[i*(j+1)].name+"<span class='freccina glyphicon glyphicon-chevron-right' align ='right'></span></p></a></div><hr class ='line-assistance' align ='left'>");
+							}
+						}
 					}
-					$("#divprom").append("<div class='item active'><img src='"+x[6].image_promotion+"' alt='Chania' width='460' height='345'></div>");
-					for(i++;i<x.length;i++)
-						$("#divprom").append("<div class='item'><img src='"+x[i].image_promotion+"' alt='Chania' width='460' height='345'></div>");
-                  }
-               }
+				}
                
                // Now get the value from user and pass it to
                // server script.
 
-               ajaxRequest.open("GET", "conndb/home.php", true);
+               ajaxRequest.open("GET", "../conndb/assistance.php", true);
                ajaxRequest.send(null);
  });

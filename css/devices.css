@@ -1,0 +1,87 @@
+.my-list {
+	list-style: >;
+	background-color: #fff;
+}
+
+.devicetitleSlide{
+	color: #ffffff;
+	text-align: center;
+	background-color: #2b78e4;
+	font-size: 22px;
+	height: 15%;
+}
+
+.device-big-title {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, 
+.img-responsive, .thumbnail a>img, .thumbnail>img {
+	height: 40%;
+}
+#wrapper { 
+	position: relative;
+}
+
+#menu-bar {
+	position: absolute;
+	top: 0;
+	background-color: #ffffff;
+}
+
+#menu-bar.fixed {
+	position: fixed;
+}
+
+.boh {
+	height: 100%;
+}
+
+.padding {
+	height: 250px;
+}
+
+.cont-device {
+	min-height: 10%;
+}
+
+.h3-centered {
+	position: relative;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.on-top {
+	z-index: 999;
+}
+
+.no-padding-table {
+	padding-right:0px;
+    padding-left:0px;
+}
+
+
+.device-page-title {
+	font-size: 25;
+	padding-bottom: 14%;
+}
+
+.device-page-subtitle {
+	font-size: 15;
+	padding-bottom: 8%;
+}
+
+.border {
+	border: 1px solid black;
+	padding-top: 4%;
+	padding-bottom: 2%;
+
+	
+}
+
+.thumbnail {
+	max-height: 60%;
+    width: auto;
+}

@@ -1,0 +1,43 @@
+.my-list {
+	list-style: >;
+	background-color: #fff;
+}
+
+.devicetitleSlide{
+	color: #ffffff;
+	text-align: center;
+	background-color: #2b78e4;
+	font-size: 22px;
+	height: 15%;
+}
+
+.device-big-title {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+.padding {
+	
+	padding-top: 0.5vw;
+}
+
+.highlight {
+	text-align: center;
+	font-size: 2.5vw;
+}
+
+.line-assistance {
+	color: #d3d3d3;
+	width: 27vw;
+}
+
+.freccina {
+	float: right;
+	margin-right: 5.5vw;
+}
+
+.centered {
+	text-align: center;
+}
