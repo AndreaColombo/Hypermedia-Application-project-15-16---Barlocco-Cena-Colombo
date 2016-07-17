@@ -1,0 +1,58 @@
+.nav-vertical-bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15vw;
+    background-color: #f1f1f1;
+	border:  0.01vw solid #000000;
+}
+
+.nav-vertical-bar >li a {
+    display: block;
+	height: 6vw;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+	font-size: 1.5vw;
+}
+
+/* Change the link color on hover */
+.nav-vertical-bar >li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.nav-vertical-bar >li{
+	border-bottom:  0.01vw solid #000000;
+	text-align: center;
+}
+.nav-vertical-bar >li:last-child{
+	border-bottom: none;
+}
+
+.nav-vertical-bar> li>a>div{
+	display: table-cell;
+    vertical-align: middle;
+	line-height: 1.1em;
+    height: inherit;
+}
+
+.category{
+	color:#2b78e4;
+	font-size: 2.5vw;
+}
+.subcategory{
+	color:#000000;
+	font-size: 2vw;
+}
+.link-assistance{
+	color:#2b78e4;
+	font-size: 1.5vw;
+}
+#menu-bar.fixed {
+	position: fixed;
+}
+#menu-bar{
+	position: absolute;
+	top: 0;
+}
