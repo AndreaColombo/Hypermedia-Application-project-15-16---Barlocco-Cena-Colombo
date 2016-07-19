@@ -9,15 +9,41 @@
   <!-- CSS -->
   <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="../css/headfoot.css" rel="stylesheet" media="screen">
-  <link href="../css/devices.css" rel="stylesheet" media="screen">
   
   <link href="../css/slServices.css" rel="stylesheet" media="screen">
+   <link href="../css/who-we-are.css" rel="stylesheet" media="screen">
+  <link href="../css/devices.css" rel="stylesheet" media="screen">
+  
   <!-- CSS -->  
-
+	<script> 
+	function change (id){
+		alert(id);
+		if(id == "1") {
+			$("#whoweare").innerHTML = 
+				'<h3>Overview</h3>'+
+				'<p class = "paragraph"> You call is born in 2016 with the goal of providing new solution in the area of telecoomunications and internet.'+
+				'We believe tha research of new technologies will be the key of our success.</p>'+
+				'<img   src="../img/tim.jpg" class="img-responsive"/>';
+		}
+		else if(id == "2") {
+			$("#whoweare").innerHTML = 
+				"kodio";
+		}
+		else if(id == 3) {
+			$("#whoweare").innerHTML = 
+				"kamadonna";
+		}
+		else if(id == 4) {
+			$("#whoweare").innerHTML = 
+				"nicogay";
+		} 
+	}
+	</script>
 </head>
 <body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
+  <script src "../js/whoweare.js"></script>
   <header class="header">
 	<div class="container">
 		<div class="row">
@@ -70,72 +96,32 @@
 					</a>
 				</li>
 				<li>
-								<meta itemprop="name" content = "SL Services">
-				<meta itemprop="position" content="1">
-					<a href="../pages/sl-services.html" itemprop="item">
-					SL services
-					
-					</a>
-				</li>
-				<li>
-					Home & Family
+					Who We Are
 				</li>
 			</ol>
 		</div>
 	</section>
 	
-	<div id="banda2" class="banda">
-		<ul id= "griglia"><li>
-			<img class="img-responsive" src="..\img\smartLife\download.jpg" width="477" height="332">
-		</li></ul>
-	</div>
-	</div>
-	
 	<br>
 	<script src = "../js/scroll.js"></script>
 	
-	<script>
-        $(document).ready(function (){
-            $("#click1").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#section1").offset().top-250}, 1000);
-            });
-			$("#click2").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#section2").offset().top-250}, 1000);
-            });
-			$("#click3").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#section3").offset().top-250}, 1000);
-            });
-			$("#click4").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#section4").offset().top-250}, 1000);
-            });
-
-        });
-    </script>
-	<br><br><br><br>
-	<div class = "container">
-		<ul id= "griglia">
-			<li><a href="http://www.html.it" target="_blank"> <img class="img-responsive" src="..\img\smartLife\carpack.jpg"width="390" height="390" border="0" vspace="10"
-							onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=40" 
-							onmouseout="this.style.opacity=1.0;this.filters.alpha.opacity=100"><p>INTERNET CAR PACK</p> <h4>The ideal solution to manage 
-all home<br> automation systems</h4>
-		<li><a href="http://www.html.it" target="_blank"> <img class="img-responsive" src="..\img\smartLife\dlink.jpg"width="589" height="38	1" border="0" vspace="10"
-								onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=40" 
-								onmouseout="this.style.opacity=1.0;this.filters.alpha.opacity=100"><p>D-LINK SMART HOME</p><h4>D-link smart home let you control 
-and automate<br> your home from wherevere you are</h4>
-			</a></li>
-			<li><a href="http://www.html.it" target="_blank"> <img class="img-responsive" src="..\img\smartLife\homeconn.jpg" width="477" height="332" border="0" vspace="10"
-							onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=40" 
-							onmouseout="this.style.opacity=1.0;this.filters.alpha.opacity=100"> <p>HOME CONNECT</p><h4 id = "sottotitolo">With the new car pack you will be able to connect<br> to internet whene you are on a journey</h4>
-			</a></li>
-
+	<div class="container">
+	<div class= "col-md-4">
+		<ul class = "vertical-bar">
+ 			<li><a onclick = "change(this.id)" id="1">Overview</a></li>
+  			<li><a onclick = "change(this.id)" id="2">Project</a></li>
+  			<li><a onclick = "change(this.id)" id="3">Testimonial</a></li>
+			<li><a onclick = "change(this.id)" id="4">Innovation</a></li>
 		</ul>
 	</div>
+		<div class= "col-md-8" id ="whoweare">
+			<h3>Overview</h3>
+			<p class = "paragraph"> You call is born in 2016 with the goal of providing new solution in the area of telecoomunications and internet. We believe tha research of new technologies will be the key of our success.</p>
+			<img   src="../img/tim.jpg" class="img-responsive"/>
+		</div>
+</div>
 
-		
+	
 
   <footer id="panel-footer">
 	<div class="container">

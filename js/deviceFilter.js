@@ -41,6 +41,7 @@ $( document ).ready(function() {
                      x= categoryRequest.responseText;
 					 x=JSON.parse(x);
 					 var idcat;
+					 $("#category-nav").append(category);
 					 if(filter=="all")
 						$("#type-panel").append("<p><input type='checkbox' id='cat0' value='all' onchange='allcategory()' checked>all</p>");
 					else
@@ -130,7 +131,7 @@ $( document ).ready(function() {
                      z= productRequest.responseText;
 					 z=JSON.parse(z);
 					for(j=0;j<z.length;j++)
-						$("#product").append("<div class='col-xs-4'><div class='thumbnail'><img class='img-responsive' src='"+z[j].image+"' alt=''><a href='#'></a></div><div class='caption'><h4 class='device-title'>"+z[j].brand+"</h4><p class='device-subtitle'>"+z[j].model+"</p><p class='device-title'>"+z[j].price+"&euro;</p></div></div>");
+						$("#product").append("<div class='col-xs-4'><div class='thumbnail'><img class='img-responsive' src='"+z[j].image+"' alt=''></div><div class='caption'><a href='description.html?id="+z[j].id+"'><h4 class='device-title'>"+z[j].brand+"</h4><p class='device-subtitle'>"+z[j].model+"</p></a><p class='device-title'>"+z[j].price+"&euro;</p></div></div>");
                   }
                }
                
@@ -239,7 +240,7 @@ function filter(){
 					 w=JSON.parse(w);
 					 $("#product").html("");
 					 for(j=0;j<w.length;j++){
-						$("#product").append("<div class='col-xs-4'><div class='thumbnail'><img class='img-responsive' src='"+w[j].image+"' alt=''><a href='#'></a></div><div class='caption'><h4 class='device-title'>"+w[j].brand+"</h4><p class='device-subtitle'>"+w[j].model+"</p><p class='device-title'>"+w[j].price+"&euro;</p></div></div>");}
+						$("#product").append("<div class='col-xs-4'><div class='thumbnail'><img class='img-responsive' src='"+w[j].image+"' alt=''></div><div class='caption'><a href='description.html?id="+w[j].id+"'><h4 class='device-title'>"+w[j].brand+"</h4><p class='device-subtitle'>"+w[j].model+"</p></a><p class='device-title'>"+w[j].price+"&euro;</p></div></div>");}
 					}
                }
                

@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "youcall";
-$password = "nicogay";
+$password = "nicobergamasco";
 
 if (!$conn = mysql_connect($servername, $username, $password)) {
     echo 'Could not connect to mysql';
@@ -14,7 +14,7 @@ if (!mysql_select_db('my_youcall', $conn)) {
 }
 
 $category=mysql_real_escape_string($_GET['category']);
-$sql='SELECT subcategory,subsubcategory,name FROM Assistance WHERE category="'.$category.'"';
+$sql='SELECT id,subcategory,subsubcategory,name FROM Assistance WHERE category="'.$category.'"';
 $result = mysql_query($sql,$conn);
 
 if (!$result) {

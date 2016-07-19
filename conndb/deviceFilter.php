@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "youcall";
-$password = "nicogay";
+$password = "nicobergamasco";
 
 if (!$conn = mysql_connect($servername, $username, $password)) {
     echo 'Could not connect to mysql';
@@ -17,9 +17,9 @@ $category=mysql_real_escape_string($_GET['category']);
 $filter=mysql_real_escape_string($_GET['filter']);
 $mode=mysql_real_escape_string($_GET['mode']);
 if($mode=="3"){
-	$sql    = 'SELECT image,brand,model,price FROM Device WHERE category="'.$category.'"';
+	$sql    = 'SELECT id,image,brand,model,price FROM Device WHERE category="'.$category.'"';
 	if($filter!="all"){
-		$sql   = 'SELECT image,brand,model,price FROM Device WHERE category="'.$category.'" AND subcategory="'.$filter.'"';
+		$sql   = 'SELECT id,image,brand,model,price FROM Device WHERE category="'.$category.'" AND subcategory="'.$filter.'"';
 	}
 }
 if($mode=="2"){

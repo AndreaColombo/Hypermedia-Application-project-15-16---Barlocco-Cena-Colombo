@@ -28,8 +28,8 @@ var ajaxRequest;  // The variable that makes Ajax possible!
 						x=ajaxRequest.responseText;
 						x=JSON.parse(x);
 						for(i=0;i<3;i++){
-							$("#div-smartphone-img"+i).append("<img class='img-responsive hidden-xs' src='" + x[i].image + "' alt=''><a href='#'></a>");
-							$("#devbrandsmartphone"+i).append("<h4 class='device-title'>"+x[i].brand+"</h4><p class='device-subtitle'>"+x[i].model+"</p>");
+							$("#div-smartphone-img"+i).append("<img class='img-responsive' src='" + x[i].image + "' alt=''>");
+							$("#devbrandsmartphone"+i).append("<a href='description.html?id="+x[i].id+"'><h4 class='device-title'>"+x[i].brand+"</h4><p class='device-subtitle'>"+x[i].model+"</p></a>");
 						}
 						$("#div-col-0").prepend("<div class = 'device-page-title'>"+x[3].category+"</div><a href='#'></a>");
 						
@@ -52,17 +52,17 @@ var ajaxRequest;  // The variable that makes Ajax possible!
 						for (i=15, j=1; i<18; i++, j++){
 							$("#div-col-3").append("<a href='http://youcall.altervista.org/pages/deviceFilter.html?filter="+x[i].subcategory+"&category=modem networking'><div class = 'device-page-subtitle' id = 'smartphone1'>"+x[i].subcategory+"</div></a>");
 						}
-						for(j=0, i=18;j<2;j++,i++){
-							$("#div-tablet-img"+j).append("<img class='img-responsive hidden-xs' src='" + x[i].image + "' alt=''><a href='#'></a>");
-							$("#devbrandtablet"+j).append("<h4 class='device-title'>"+x[i].brand+"</h4><p class='device-subtitle'>"+x[i].model+"</p>");
+						for(j=0, i=18;j<3;j++,i++){
+							$("#div-tablet-img"+j).append("<img class='img-responsive' src='" + x[i].image + "' alt=''>");
+							$("#devbrandtablet"+j).append("<a href='description.html?id="+x[i].id+"'><h4 class='device-title'>"+x[i].brand+"</h4><p class='device-subtitle'>"+x[i].model+"</p></a>");
 						}
-						for(j=0, i=20;j<3;j++,i++){
-							$("#div-smart-img"+j).append("<img class='img-responsive hidden-xs' src='" + x[i].image + "' alt=''><a href='#'></a>");
-							$("#devbrandsmart"+j).append("<h4 class='device-title'>"+x[i].brand+"</h4><p class='device-subtitle'>"+x[i].model+"</p>");
+						for(j=0, i=21;j<3;j++,i++){
+							$("#div-smart-img"+j).append("<img class='img-responsive' src='" + x[i].image + "' alt=''>");
+							$("#devbrandsmart"+j).append("<a href='description.html?id="+x[i].id+"'><h4 class='device-title'>"+x[i].brand+"</h4><p class='device-subtitle'>"+x[i].model+"</p></a>");
 						}
-						for(i=23,j=0;j<2;j++,i++){
-							$("#div-router-img"+j).append("<img class='img-responsive hidden-xs' src='" + x[i].image + "' alt=''><a href='#'></a>");
-							$("#devbrandrouter"+j).append("<h4 class='device-title'>"+x[i].brand+"</h4><p class='device-subtitle'>"+x[i].model+"</p>");
+						for(i=24,j=0;j<3;j++,i++){
+							$("#div-router-img"+j).append("<img class='img-responsive' src='" + x[i].image + "' alt=''>");
+							$("#devbrandrouter"+j).append("<a href='description.html?id="+x[i].id+"'><h4 class='device-title'>"+x[i].brand+"</h4><p class='device-subtitle'>"+x[i].model+"</p></a>");
 						}
 					}
 				}

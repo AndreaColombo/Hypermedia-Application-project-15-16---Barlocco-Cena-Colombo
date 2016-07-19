@@ -83,5 +83,18 @@
 
 .thumbnail {
 	max-height: 60%;
-    width: auto;
+    width: 10vw;
+}
+.thumbnail>img {
+	height: 14vw;
+}
+
+.icon {
+	height: 6vw;
+	width: auto;
+}
+
+.cont {
+	margin-left: 10vw;
+	width: 100%;
 }

@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "youcall";
-$password = "nicogay";
+$password = "nicobergamasco";
 
 if (!$conn = mysql_connect($servername, $username, $password)) {
     echo 'Could not connect to mysql';
@@ -13,7 +13,7 @@ if (!mysql_select_db('my_youcall', $conn)) {
     exit;
 }
 
-$sql    = 'SELECT brand,model,image FROM Device WHERE category="smartphone"';
+$sql    = 'SELECT id,brand,model,image FROM Device WHERE category="smartphone"';
 $result = mysql_query($sql,$conn);
 
 if (!$result) {
@@ -28,7 +28,7 @@ while (($row = mysql_fetch_assoc($result)) && $x<6) {
 	array_push($arr,$row);
 	$x++;
 }
-$sql    = 'SELECT image_promotion FROM Device WHERE image_promotion is not null UNION SELECT image_promotion FROM Smart_life WHERE image_promotion is not null';
+$sql    = 'SELECT id,image_promotion FROM Device WHERE image_promotion is not null UNION SELECT id,image_promotion FROM Smart_life WHERE image_promotion is not null';
 $result = mysql_query($sql,$conn);
 
 if (!$result) {

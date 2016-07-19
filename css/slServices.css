@@ -10,13 +10,13 @@
 .banda { 
 	width: 100%; 
 }
-#banda1{
+.banda1{
 	padding: 0;
 	position: relative;
 	background:rgba(43,120,228,0.2);
 	text-align: center;
 }
-#banda2{
+.banda2{
 	padding: 0;
 	position: relative;
 	background:rgba(255,0,0,0.2);

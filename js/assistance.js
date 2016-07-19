@@ -30,10 +30,10 @@ var ajaxRequest;  // The variable that makes Ajax possible!
 						for (j=0; j<2;j++){
 							for (i=0; i<3; i++){
 								if (i==0 && j==1){
-									$("#highlight"+j).append("<div> <a href = '#' <p class ='assistance-title'>"+x[3].name+"<span class='freccina glyphicon glyphicon-chevron-right' align ='right'></span></p></a></div><hr class ='line-assistance' align ='left'>");
+									$("#highlight"+j).append("<div> <a href = 'assistanceDesc.html?id="+x[3].id+"' <p class ='assistance-title'>"+x[3].name+"<span class='freccina glyphicon glyphicon-chevron-right' align ='right'></span></p></a></div><hr class ='line-assistance' align ='left'>");
 								}
 								else 
-									$("#highlight"+j).append("<div> <a href = '#'> <p class ='assistance-title'>"+x[i*(j+1)].name+"<span class='freccina glyphicon glyphicon-chevron-right' align ='right'></span></p></a></div><hr class ='line-assistance' align ='left'>");
+									$("#highlight"+j).append("<div> <a href = 'assistanceDesc.html?id="+x[i*(j+1)].id+"'> <p class ='assistance-title'>"+x[i*(j+1)].name+"<span class='freccina glyphicon glyphicon-chevron-right' align ='right'></span></p></a></div><hr class ='line-assistance' align ='left'>");
 							}
 						}
 					}

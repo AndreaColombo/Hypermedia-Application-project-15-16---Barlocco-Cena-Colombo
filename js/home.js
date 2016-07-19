@@ -28,12 +28,19 @@ var ajaxRequest;  // The variable that makes Ajax possible!
 					 x=ajaxRequest.responseText;
 					 x=JSON.parse(x);
 					 for(i=0;i<6;i++){
-						$("#devimg"+i).append("<img class='img-responsive hidden-xs' src='" + x[i].image + "' alt=''><a href='#'></a>");
-						$("#devbrand"+i).append("<h4 class='device-title'>"+x[i].brand+"</h4><p class='device-subtitle'>"+x[i].model+"</p>");
+						$("#devimg"+i).append("<img class='img-responsive' src='" + x[i].image + "' alt=''>");
+						$("#devbrand"+i).append("<a href='pages/description.html?id="+x[i].id+"'><h4 class='device-title'>"+x[i].brand+"</h4><p class='device-subtitle'>"+x[i].model+"</p></a>");
 					}
-					$("#divprom").append("<div class='item active'><img src='"+x[6].image_promotion+"' alt='Chania' width='460' height='345'></div>");
-					for(i++;i<x.length;i++)
-						$("#divprom").append("<div class='item'><img src='"+x[i].image_promotion+"' alt='Chania' width='460' height='345'></div>");
+					if(x[6].image_promotion.indexOf("device") > -1)
+						$("#divprom").append("<div class='item active'><a href='pages/description.html?id="+x[6].id+"'><img src='"+x[6].image_promotion+"' alt='Chania' width='460' height='345'></a></div>");
+					else
+						$("#divprom").append("<div class='item active'><a href='pages/sl-desc.html?id="+x[6].id+"'><img src='"+x[6].image_promotion+"' alt='Chania' width='460' height='345'></a></div>");
+					for(i++;i<x.length;i++){
+						if(x[i].image_promotion.indexOf("device") > -1)
+							$("#divprom").append("<div class='item'><a href='pages/description.html?id="+x[i].id+"'><img src='"+x[i].image_promotion+"' alt='Chania' width='460' height='345'></a></div>");
+						else
+							$("#divprom").append("<div class='item'><a href='pages/sl-desc.html?id="+x[i].id+"'><img src='"+x[i].image_promotion+"' alt='Chania' width='460' height='345'></a></div>");
+					}
                   }
                }
                

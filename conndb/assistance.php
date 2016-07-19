@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "youcall";
-$password = "nicogay";
+$password = "nicobergamasco";
 
 if (!$conn = mysql_connect($servername, $username, $password)) {
     echo 'Could not connect to mysql';
@@ -13,7 +13,7 @@ if (!mysql_select_db('my_youcall', $conn)) {
     exit;
 }
 
-$sql    = 'SELECT name FROM Assistance WHERE highlight ="1"';
+$sql    = 'SELECT id,name FROM Assistance WHERE highlight ="1"';
 $result = mysql_query($sql,$conn);
 
 if (!$result) {

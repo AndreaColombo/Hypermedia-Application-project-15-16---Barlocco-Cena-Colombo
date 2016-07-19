@@ -91,7 +91,7 @@ ul.tab li a:focus, .active {background-color: #ccc;}
     display: none !important;
 }
 
-h{
+h5{
 color: red;
 font-size: 3vw;
 }
@@ -102,6 +102,7 @@ font-size: 2vw;
 }
 h4{
 color: grey;
+font-size: 1.75vw;
 }
 
 
@@ -110,4 +111,15 @@ color: grey;
   height: 5vw ;
   padding: 0;
   
+}
+.btn{
+	font-size: 20px;
+}
+.related{
+	color: red;
+font-size: 1.75vw;
+}
+.relatedList{
+	color: red;
+font-size: 1vw;
 }

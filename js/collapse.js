@@ -20,33 +20,33 @@ $(document).ready(function () {
 		}
 		else if (w >1000) {
 			document.getElementById("menu-bar").innerHTML = 
-			'<div class ="col-xs-offset-2 col-xs-2">'+
+			'<div class ="col-md-2">'+
 				'<a id = "click1">'+
-					'<img class = "img-responsive" src = "../img/device/smartphone-icon.jpg"></img>'+
+					'<img class = "icon xs-hidden" src = "../img/device/smartphone-icon.jpg" ></img>'+
 					'<h3> Smartphone</h3>'+
 				'</a>'+
 			'</div>'+
-			'<div class = "col-xs-2">'+
+			'<div class = "col-md-2">'+
 				'<a id = "click2">'+
-					'<img class = "img-responsive"  src = "../img/device/tablet-icon.jpg"></img>'+
+					'<img class = "icon xs-hidden"  src = "../img/device/tablet-icon.jpg"></img>'+
 					'<h3> Tablet</h3>'+
 				'</a>'+				
 			'</div>'+			
-			'<div class = "col-xs-2">'+	
+			'<div class = "col-md-2">'+	
 				'<a id="click3">'+
-					'<img class = "img-responsive" src = "../img/device/smart-icon.jpg"></img>'+
+					'<img class = "icon xs-hidden" src = "../img/device/smart-icon.jpg"></img>'+
 					'<h3> Smart Accessories</h3>'+
 				'</a>'+		
 			'</div>'+
-			'<div class = "col-xs-2">'+
+			'<div class = "col-md-2">'+
 				'<a id="click4">'+
-					'<img class = "img-responsive" src = "../img/device/router-icon.png"></img>'+
+					'<img class = "icon xs-hidden" src = "../img/device/router-icon.png"></img>'+
 					'<h3 > Modem & Networking </h3>'+
 				'</a>'+
 			'</div>'+
-			'<div class = "col-xs-2">'+
+			'<div class = "col-md-2">'+
 				'<a id="click5">'+
-					'<img class = "img-responsive" src = "../img/device/sale-tag-icon.jpg"></img>'+
+					'<img class = "icon xs-hidden" src = "../img/device/sale-tag-icon.jpg"></img>'+
 					'<h3> Device outlet</h3>'+
 				'</a>'+
 			'</div>'

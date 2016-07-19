@@ -1,0 +1,142 @@
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
+#container {
+    margin: 30px;
+}
+ 
+#wrapper {
+    border: 0px solid #ccc;
+    height: 320px;
+    margin-bottom: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    
+}
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* larghezza totale */
+}
+.slider li {
+    float: left;
+    width: 100%;
+}
+.slider img {
+    display: block;
+    
+}
+ 
+/* link di navigazione */
+.navigation {
+   
+    overflow: hidden;
+    width: 100%;
+ 
+}
+.navigation a {
+    
+    background: #ccc;
+    color: #333;
+    font: bold 14px arial, helvetica, sans-serif;
+    display: block;
+    float: left;
+    padding: 4px 10px;
+    margin-right: 5px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.navigation a:active {
+    background-color: #999; 
+}
+ 
+.js-shown {
+    display: none !important;
+}
+
+h5{
+color: red;
+font-size: 3vw;
+}
+
+h3 {
+color: black;
+font-size: 2vw;
+}
+h4{
+color: grey;
+font-size: 1.75vw;
+}
+
+
+#griglia {
+  width: 5vw;
+  height: 5vw ;
+  padding: 0;
+  
+}
+.btn{
+	font-size: 20px;
+}
+
+.centro {
+      display:block;
+      margin:0px auto;
+      color: #2b78e4;
+      font-size: 3vw;
+      text-align:center;
+      }
+      
+h4{
+color: grey;
+font-size: 1.75vw;
+}
+.btn{
+	font-size: 20px;
+}
+.related{
+	color: red;
+font-size: 1.75vw;
+}
+.relatedList{
+	color: red;
+font-size: 1vw;
+}
+

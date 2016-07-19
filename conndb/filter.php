@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "youcall";
-$password = "nicogay";
+$password = "nicobergamasco";
 
 if (!$conn = mysql_connect($servername, $username, $password)) {
     echo 'Could not connect to mysql';
@@ -25,7 +25,7 @@ while($_GET['filterBra'.$x]!=null){
 	array_push($filterBra,$_GET['filterBra'.$x]);
 	$x++;
 }
-$sql   = 'SELECT image,brand,model,price FROM Device WHERE category="'.$category.'"';
+$sql   = 'SELECT id,image,brand,model,price FROM Device WHERE category="'.$category.'"';
 if($filterCat[0]!='all'){
 	for($i=0;$i<count($filterCat);$i++){
 		if($i==0)

@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "youcall";
-$password = "nicogay";
+$password = "nicobergamasco";
 
 if (!$conn = mysql_connect($servername, $username, $password)) {
     echo 'Could not connect to mysql';
@@ -13,7 +13,7 @@ if (!mysql_select_db('my_youcall', $conn)) {
     exit;
 }
 
-$sql    = 'SELECT brand,model,image FROM Device WHERE category="smartphone"';
+$sql    = 'SELECT id,brand,model,image FROM Device WHERE category="smartphone"';
 $result = mysql_query($sql,$conn);
 
 if (!$result) {
@@ -78,7 +78,7 @@ while (($row = mysql_fetch_assoc($result))){
 	$x++;
 }
 
-$sql    = 'SELECT brand,model,image FROM Device WHERE category="tablet"';
+$sql    = 'SELECT id,brand,model,image FROM Device WHERE category="tablet"';
 $result = mysql_query($sql,$conn);
 
 $x=0;
@@ -87,7 +87,7 @@ while (($row = mysql_fetch_assoc($result)) && $x<3) {
 	$x++;
 }
 
-$sql    = 'SELECT brand,model,image FROM Device WHERE category="smart accessories"';
+$sql    = 'SELECT id,brand,model,image FROM Device WHERE category="smart accessories"';
 $result = mysql_query($sql,$conn);
 
 $x=0;
@@ -96,7 +96,7 @@ while (($row = mysql_fetch_assoc($result)) && $x<3) {
 	$x++;
 }
 
-$sql    = 'SELECT brand,model,image FROM Device WHERE category="modem networking"';
+$sql    = 'SELECT id,brand,model,image FROM Device WHERE category="modem networking"';
 $result = mysql_query($sql,$conn);
 
 $x=0;

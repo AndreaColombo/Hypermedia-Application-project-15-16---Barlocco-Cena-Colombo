@@ -27,14 +27,9 @@ var ajaxRequest;  // The variable that makes Ajax possible!
 					if(ajaxRequest.readyState == 4){
 						x=ajaxRequest.responseText;
 						x=JSON.parse(x);
-						for (j=0; j<2;j++){
-							for (i=0; i<3; i++){
-								if (i==0 && j==1){
-									$("#highlight"+j).append("<div> <p class ='assistance-title'>"+x[3].name+"<span class='glyphicon glyphicon-chevron-right' align ='right'></span></p></div><hr width ='450'align ='left'>");
-								}
-								else 
-									$("#highlight"+j).append("<div> <p class ='assistance-title'>"+x[i*(j+1)].name+"<span class='glyphicon glyphicon-chevron-right' align ='right'></span></p></div><hr width ='450'align ='left'>");
-							}
+						for (i=0; i<x.length; i++){
+							$("#promotion").append("<div class = 'col-xs-3'><div class='thumbnail'><img src ='"+ x[i].image +"'></div><div class='caption'><a href='description.html?id="+x[i].id+"'><h4 class='device-title'>"+x[i].brand+"</h4><p class='device-subtitle'>"+x[i].model+"</p></a><del>"+x[i].old_price+"&euro;</del><p>"+x[i].price+"&euro;</p></div></div>");
+							
 						}
 					}
 				}
@@ -42,6 +37,6 @@ var ajaxRequest;  // The variable that makes Ajax possible!
                // Now get the value from user and pass it to
                // server script.
 
-               ajaxRequest.open("GET", "../conndb/assistance.php", true);
+               ajaxRequest.open("GET", "../conndb/outlet.php", true);
                ajaxRequest.send(null);
  });

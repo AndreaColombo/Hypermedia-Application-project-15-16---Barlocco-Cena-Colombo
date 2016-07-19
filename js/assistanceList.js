@@ -1,4 +1,3 @@
-
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
@@ -41,6 +40,7 @@ var ajaxRequest;  // The variable that makes Ajax possible!
 					 x=JSON.parse(x);
 					 var i,j,k;
 					 var prec;
+					 $("#category-nav").append(category);
 					 for(i=0;i<x.length;i++){
 						 if(prec!=x[i].subcategory)
 							$("#bar-menu").append("<li><a href='#"+x[i].subcategory+"'><div>"+x[i].subcategory+"</div></a></li>");
@@ -48,10 +48,10 @@ var ajaxRequest;  // The variable that makes Ajax possible!
 						}
 					for(i=0;i<x.length;i=j){
 						$("#list").append("<h1 class='category' id='"+x[i].subcategory+"'>"+x[i].subcategory+"</h1>");
-						for(j=i;x[j].subcategory==x[i].subcategory;j=k){
+						for(j=i;j<x.length && x[j].subcategory==x[i].subcategory;j=k){
 							$("#list").append("<h2 class='subcategory'>"+x[j].subsubcategory+"</h2>");
-							for(k=j;x[j].subsubcategory==x[k].subsubcategory;k++)
-								$("#list").append("<p class='link-assistance'><a href='#'>"+x[k].name+"</a></p>");
+							for(k=j;k<x.length && x[j].subsubcategory==x[k].subsubcategory;k++)
+								$("#list").append("<p class='link-assistance'><a href='assistanceDesc.html?id="+x[k].id+"'>"+x[k].name+"</a></p>");
 							}
 						$("#list").append("<hr>");
 						}
