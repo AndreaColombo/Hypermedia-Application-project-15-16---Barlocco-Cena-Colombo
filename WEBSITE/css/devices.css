@@ -98,3 +98,13 @@
 	margin-left: 10vw;
 	width: 100%;
 }
+
+.thumbnail {
+	max-height: 60%;
+    width: 100%;
+}
+.thumbnail>img {
+	height: 9em;
+	width: auto;
+	
+}
