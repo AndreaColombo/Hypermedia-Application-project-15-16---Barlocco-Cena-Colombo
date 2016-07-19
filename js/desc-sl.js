@@ -74,7 +74,7 @@ var ajaxRequest;  // The variable that makes Ajax possible!
                // Now get the value from user and pass it to
                // server script.
                var queryString = "?id="+id;
-               ajaxRequest.open("GET", "../conndb/desc-sl.php" + queryString, true);
+               ajaxRequest.open("GET", "http://youcall.altervista.org/conndb/desc-sl.php" + queryString, true);
                ajaxRequest.send(null); 
 			   
 			   var devRequest;  // The variable that makes Ajax possible!
