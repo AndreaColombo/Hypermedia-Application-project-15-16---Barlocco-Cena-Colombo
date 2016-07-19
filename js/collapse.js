@@ -1,6 +1,6 @@
 $(document).ready(function () {  
 	var w = $(window).width();
-		if (w < 750) {
+		if (w < 1000) {
 			document.getElementById("menu-bar").innerHTML = 
 			'<a id = "click1"> <h3> Smartphone</h3> </a>'+
 			'<a id = "click2"> <h3>Tablet</h3></a>'+
@@ -10,7 +10,7 @@ $(document).ready(function () {
 		}
 	$(window).on("resize", function(){
 		var w = $(window).width();
-		if (w < 750){
+		if (w < 1000){
 			document.getElementById("menu-bar").innerHTML = 
 			'<a id = "click1"> <h3> Smartphone</h3> </a>'+
 			'<a id = "click2"> <h3> Tablet</h3></a>'+
