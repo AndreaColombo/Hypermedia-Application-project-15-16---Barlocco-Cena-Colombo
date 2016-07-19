@@ -59,7 +59,7 @@ $( document ).ready(function() {
                // Now get the value from user and pass it to
                // server script.
                var queryString = "?filter=" + filter+"&category="+category+"&mode=2";
-               categoryRequest.open("GET", "../conndb/deviceFilter.php" + queryString, true);
+               categoryRequest.open("GET", "http://youcall.altervista.org/conndb/deviceFilter.php" + queryString, true);
                categoryRequest.send(null); 
 			   
 	var brandRequest;  // The variable that makes Ajax possible!
@@ -99,7 +99,7 @@ $( document ).ready(function() {
                // Now get the value from user and pass it to
                // server script.
                var queryString = "?filter=" + filter+"&category="+category+"&mode=1";
-               brandRequest.open("GET", "../conndb/deviceFilter.php" + queryString, true);
+               brandRequest.open("GET", "http://youcall.altervista.org/conndb/deviceFilter.php" + queryString, true);
                brandRequest.send(null); 
 
 			   var productRequest;  // The variable that makes Ajax possible!
@@ -138,7 +138,7 @@ $( document ).ready(function() {
                // Now get the value from user and pass it to
                // server script.
                var queryString = "?filter=" + filter+"&category="+category+"&mode=3";
-               productRequest.open("GET", "../conndb/deviceFilter.php" + queryString, true);
+               productRequest.open("GET", "http://youcall.altervista.org/conndb/deviceFilter.php" + queryString, true);
                productRequest.send(null); 
 });
 
@@ -270,6 +270,6 @@ function filter(){
 					   count++;
 				   }
 			   }
-               filterRequest.open("GET", "../conndb/filter.php" + queryString, true);
+               filterRequest.open("GET", "http://youcall.altervista.org/conndb/filter.php" + queryString, true);
                filterRequest.send(null); 
 }

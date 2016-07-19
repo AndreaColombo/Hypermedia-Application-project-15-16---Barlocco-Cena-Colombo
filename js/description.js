@@ -74,7 +74,7 @@ var ajaxRequest;  // The variable that makes Ajax possible!
                // Now get the value from user and pass it to
                // server script.
                var queryString = "?id="+id;
-               ajaxRequest.open("GET", "../conndb/descdev.php" + queryString, true);
+               ajaxRequest.open("GET", "http://youcall.altervista.org/conndb/descdev.php" + queryString, true);
                ajaxRequest.send(null); 
 			   
 			   var assistanceSlRequest;  // The variable that makes Ajax possible!
@@ -116,7 +116,7 @@ var ajaxRequest;  // The variable that makes Ajax possible!
                // Now get the value from user and pass it to
                // server script.
                var queryString = "?id="+id;
-               assistanceSlRequest.open("GET", "../conndb/assistDev.php" + queryString, true);
+               assistanceSlRequest.open("GET", "http://youcall.altervista.org/conndb/assistDev.php" + queryString, true);
                assistanceSlRequest.send(null); 
 			   
 			   var slRequest;  // The variable that makes Ajax possible!
@@ -158,6 +158,6 @@ var ajaxRequest;  // The variable that makes Ajax possible!
                // Now get the value from user and pass it to
                // server script.
                var queryString = "?id="+id;
-               slRequest.open("GET", "../conndb/assistSl.php" + queryString, true);
+               slRequest.open("GET", "http://youcall.altervista.org/conndb/assistSl.php" + queryString, true);
                slRequest.send(null); 
 });

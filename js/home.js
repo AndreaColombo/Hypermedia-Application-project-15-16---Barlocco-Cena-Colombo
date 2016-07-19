@@ -47,6 +47,6 @@ var ajaxRequest;  // The variable that makes Ajax possible!
                // Now get the value from user and pass it to
                // server script.
 
-               ajaxRequest.open("GET", "conndb/home.php", true);
+               ajaxRequest.open("GET", "http://youcall.altervista.org/conndb/home.php", true);
                ajaxRequest.send(null);
  });
